@@ -103,6 +103,6 @@ Extras
    We wrote this challenge trying to keep it simple and clear - there’s no hidden pitfalls so
    we want you to keep it simple. Do not hesitate to reach out if you have any questions.
    For questions or delivering the completed challenge, please send an email to
-   itc-jr-challenge@itcrowdarg.com (Spanish is OK for questions, no need to ask in
+   xxx@xxx.com (Spanish is OK for questions, no need to ask in
    English).
    Good luck!
