@@ -1,0 +1,167 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Iphone 13",
+      "description": "Besides, the iPhone 13 mini on the front sports a 12 MP camera with f/2.2 aperture for making video calls and clicking selfies.",
+      "img_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg",
+      "brand": "Apple",
+      "price": "1000"
+    },
+    {
+      "id": "2",
+      "name": "Iphone 13 Pro",
+      "description": "This is product 2",
+      "img_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg",
+      "brand": "Apple",
+      "price": "2000"
+    },
+    {
+      "id": "3",
+      "name": "Iphone 13 Pro Max",
+      "description": "This is product 3",
+      "img_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg",
+      "brand": "Apple",
+      "price": "300"
+    },
+    {
+      "id": "4",
+      "name": "Iphone 12",
+      "description": "This is product 4",
+      "img_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg",
+      "brand": "Apple",
+      "price": "400"
+    },
+    {
+      "id": "5",
+      "name": "Iphone 12 Pro",
+      "description": "This is product 5",
+      "img_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg",
+      "brand": "Apple",
+      "price": "500"
+    }
+  ],
+
+  "brands": [
+    {
+      "id": "1",
+      "name": "Apple",
+      "logo_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Samsung",
+      "logo_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Xiaomi",
+      "logo_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg"
+    },
+    {
+      "id": "4",
+      "name": "OnePlus",
+      "logo_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Oppo",
+      "logo_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Vivo",
+      "logo_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Nokia",
+      "logo_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Asus",
+      "logo_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Lenovo",
+      "logo_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg"
+    },
+    {
+      "id": "10",
+      "name": "LG",
+      "logo_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Motorola",
+      "logo_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Huawei",
+      "logo_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg"
+    },
+    {
+      "id": "13",
+      "name": "Meizu",
+      "logo_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg"
+    },
+    {
+      "id": "14",
+      "name": "ZTE",
+      "logo_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg"
+    },
+    {
+      "id": "15",
+      "name": "Alcatel",
+      "logo_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg"
+    },
+    {
+      "id": "16",
+      "name": "Blackberry",
+      "logo_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg"
+    },
+    {
+      "id": "17",
+      "name": "HTC",
+      "logo_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg"
+    },
+    {
+      "id": "18",
+      "name": "Sony",
+      "logo_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg"
+    },
+    {
+      "id": "19",
+      "name": "Oppo",
+      "logo_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg"
+    },
+    {
+      "id": "20",
+      "name": "Asus",
+      "logo_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg"
+    },
+    {
+      "id": "21",
+      "name": "Lenovo",
+      "logo_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg"
+    },
+    {
+      "id": "22",
+      "name": "LG",
+      "logo_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg"
+    },
+    {
+      "id": "23",
+      "name": "Motorola",
+      "logo_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg"
+    },
+    {
+      "id": "24",
+      "name": "Huawei",
+      "logo_url": "https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg"
+    }
+  ]
+}
