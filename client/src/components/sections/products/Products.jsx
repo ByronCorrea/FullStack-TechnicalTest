@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import ProductCard from "./card/ProductCard";
 import "../products/Products.css";
+import { useDispatch } from "react-redux";
+import { clearProduct } from "../../../redux/searchBar";
 
 function Products() {
-  const { products, brands } = useSelector((state) => state.searchBar);
+  const { products } = useSelector((state) => state.searchBar);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(clearProduct());
+  }, [dispatch]);
 
   return (
     <section className="sectionn">
-      <div className="select">
+      {/* <div className="select">
         <select name="select">
           <option value="">All</option>
           {brands.map((brand) => (
@@ -17,7 +24,7 @@ function Products() {
             </option>
           ))}
         </select>
-      </div>
+      </div> */}
       <span className="section__subtitle">Best Choise</span>
       <h2 className="section__title">
         Our Phones<span>.</span>
@@ -26,7 +33,9 @@ function Products() {
       <div className="popular__container">
         <div className="elements">
           {products.map((product) => (
+            // <Link to={`/details/${product.id}`}>
             <ProductCard props={product} key={product.id} />
+            // {/* </Link> */}
           ))}
         </div>
       </div>

@@ -10,8 +10,8 @@ function Footer() {
             Tecno House <i className="bx bxs-home-smile"></i>
           </a>
           <p className="footer__description">
-            Our vision is to make all people <br />
-            the best place to live for them.
+            Our vision is to help everyone find <br />
+            the phone they deserve, the perfect phone.
           </p>
         </div>
 

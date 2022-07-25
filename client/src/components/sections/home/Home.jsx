@@ -2,36 +2,13 @@ import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 import Home1 from "../../assets/IphoneHome.png";
 import SearchBar from "../SearchBar/SearchBar";
+import { clearProduct } from "../../../redux/searchBar";
+import { useDispatch } from "react-redux";
 
 function Home() {
+  const dispatch = useDispatch();
   useEffect(() => {
-    const counters = document.querySelectorAll(".counter");
-    const speed = 500; // The lower the slower
-
-    counters.forEach((counter) => {
-      const updateCount = () => {
-        const target = +counter.getAttribute("data-target");
-        const count = +counter.innerText;
-
-        // Lower inc to slow and higher to slow
-        const inc = target / speed;
-
-        // console.log(inc);
-        // console.log(count);
-
-        // Check if target is reached
-        if (count < target) {
-          // Add inc to count and output in counter
-          counter.innerText = count + inc;
-          // Call function every ms
-          setTimeout(updateCount, 1);
-        } else {
-          counter.innerText = target;
-        }
-      };
-
-      updateCount();
-    });
+    dispatch(clearProduct());
     /*=============== DARK LIGHT THEME ===============*/
     const themeButton = document.getElementById("theme-button");
     const darkTheme = "dark-theme";
@@ -87,7 +64,7 @@ function Home() {
     sr.reveal(`.logos__img`, { interval: 100 });
     sr.reveal(`.value__images, .contact__content`, { origin: "left" });
     sr.reveal(`.value__content, .contact__images`, { origin: "right" });
-  });
+  }, [dispatch]);
   return (
     <section className="home section" id="home">
       <div className="home__container container grid">
