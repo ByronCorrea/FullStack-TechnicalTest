@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
-import Home1 from "../assets/IphoneHome.png";
-import SearchBar from "./SearchBar/SearchBar";
+import Home1 from "../../assets/IphoneHome.png";
+import SearchBar from "../SearchBar/SearchBar";
 
 function Home() {
   useEffect(() => {

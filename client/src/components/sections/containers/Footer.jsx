@@ -7,7 +7,7 @@ function Footer() {
       <div className="footer__container container grid">
         <div>
           <a href="#" className="footer__logo">
-            Tecno House <i class="bx bxs-home-smile"></i>
+            Tecno House <i className="bx bxs-home-smile"></i>
           </a>
           <p className="footer__description">
             Our vision is to make all people <br />

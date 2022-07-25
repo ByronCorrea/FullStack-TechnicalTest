@@ -11,15 +11,15 @@ function Navbar() {
 
   return (
     <nav className="nav container">
-      <NavLink to="/home" className="nav__logo">
-        Tecno House <i class="bx bxs-home-smile"></i>
+      <NavLink to="/" className="nav__logo">
+        Tecno House <i className="bx bxs-home-smile"></i>
       </NavLink>
 
       <div className="nav__menu">
         <ul className="nav__list">
           <li className="nav__item">
             <NavLink
-              to="/home"
+              to="/"
               className="nav__link"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
@@ -45,7 +45,7 @@ function Navbar() {
       <i className="bx bx-moon change-theme" id="theme-button"></i>
 
       <a href="#home" className="button nav__button">
-        Suscribe
+        LOG IN
       </a>
     </nav>
   );
