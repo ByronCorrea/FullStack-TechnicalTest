@@ -42,13 +42,13 @@ function Value() {
 
         <div className="value__content">
           <div className="value__data">
-            <span className="section__subtitle">Our Value</span>
+            <span className="section__subtitle">FAQ</span>
             <h2 className="section__title">
-              Value We Give To You<span>.</span>
+              Frequent Questions<span>.</span>
             </h2>
             <p className="value__description">
               We always ready to help by providing the best service for you. We
-              believe a good place to live can make your life better.
+              believe a good phone can make your life better.
             </p>
           </div>
 
@@ -56,9 +56,7 @@ function Value() {
             <div className="value__accordion-item">
               <header className="value__accordion-header">
                 <i className="bx bxs-shield-x value__accordion-icon"></i>
-                <h3 className="value__accordion-title">
-                  Best interest rates on the market
-                </h3>
+                <h3 className="value__accordion-title">Payment methods?</h3>
                 <div className="value__accordion-arrow">
                   <i className="bx bxs-down-arrow"></i>
                 </div>
@@ -66,9 +64,9 @@ function Value() {
 
               <div className="value__accordion-content">
                 <p className="value__accordion-description">
-                  Price we provides is the best for you, we guarantee no price
-                  changes on your property due to various unexpected costs that
-                  may come.
+                  We accept all means of payment, credit cards, debit cards,
+                  cash payment withdrawing in the store and a month ago we
+                  accepted cryptocurrencies.
                 </p>
               </div>
             </div>
@@ -77,9 +75,7 @@ function Value() {
               <header className="value__accordion-header">
                 <i className="bx bxs-x-square value__accordion-icon"></i>
                 {/* <!-- <i className='bx bxs-shield-x'></i> --> */}
-                <h3 className="value__accordion-title">
-                  Prevent unstable prices
-                </h3>
+                <h3 className="value__accordion-title">Deliveries?</h3>
                 <div className="value__accordion-arrow">
                   <i className="bx bxs-down-arrow"></i>
                 </div>
@@ -87,9 +83,8 @@ function Value() {
 
               <div className="value__accordion-content">
                 <p className="value__accordion-description">
-                  Price we provides is the best for you, we guarantee no price
-                  changes on your property due to various unexpected costs that
-                  may come.
+                  Of course! We ship with fedex or you can also request our
+                  shipping service, for now we only ship in California.
                 </p>
               </div>
             </div>
@@ -99,7 +94,7 @@ function Value() {
                 <i className="bx bxs-bar-chart-square value__accordion-icon"></i>
                 {/* <!-- <i className='bx bxs-shield-x'></i> --> */}
                 <h3 className="value__accordion-title">
-                  Best prices on the market
+                  How long is the warranty time?
                 </h3>
                 <div className="value__accordion-arrow">
                   <i className="bx bxs-down-arrow"></i>
@@ -108,9 +103,8 @@ function Value() {
 
               <div className="value__accordion-content">
                 <p className="value__accordion-description">
-                  Price we provides is the best for you, we guarantee no price
-                  changes on your property due to various unexpected costs that
-                  may come.
+                  All equipment has a 1-month warranty with our store and a
+                  1-year manufacturing warranty.
                 </p>
               </div>
             </div>
@@ -119,9 +113,7 @@ function Value() {
               <header className="value__accordion-header">
                 <i className="bx bxs-check-square value__accordion-icon"></i>
                 {/* <!-- <i className='bx bxs-shield-x'></i> --> */}
-                <h3 className="value__accordion-title">
-                  Security of your data
-                </h3>
+                <h3 className="value__accordion-title">Do you do wholesale?</h3>
                 <div className="value__accordion-arrow">
                   <i className="bx bxs-down-arrow"></i>
                 </div>
@@ -129,9 +121,8 @@ function Value() {
 
               <div className="value__accordion-content">
                 <p className="value__accordion-description">
-                  Price we provides is the best for you, we guarantee no price
-                  changes on your property due to various unexpected costs that
-                  may come.
+                  Yes, we sell wholesale, purchases over 10,000 USD. You can
+                  send us an email with the subject Business!
                 </p>
               </div>
             </div>

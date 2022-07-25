@@ -23,7 +23,7 @@ function SearchBar() {
   return (
     <div>
       <form action="" className="home__search">
-        <i className="bx bxs-map"></i>
+        <i className="bx bx-search-alt"></i>
         <input
           type="search"
           placeholder="Search for name..."

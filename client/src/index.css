@@ -231,7 +231,7 @@ body.dark-theme {
 }
 
 .nav__logo {
-  color: #fff;
+  color: var(--title-color);
   display: alinne-flex;
   align-items: center;
   column-gap: 0.25rem;
