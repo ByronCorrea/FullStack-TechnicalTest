@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import Page from "./components/Page";
 import Products from "./components/sections/products/Products.jsx";
 import Header from "./components/sections/containers/Header";
+import Details from "./components/sections/details/Details.jsx";
 import "./index.css";
 import { fetchAllProduts } from "./redux/searchBar";
 import { Routes, Route } from "react-router-dom";
@@ -17,8 +18,9 @@ function App() {
     <div>
       <Header />
       <Routes>
-        <Route path="/home" element={<Page />} />
+        <Route path="/" element={<Page />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/details/:id" element={<Details />} />
       </Routes>
     </div>
   );
