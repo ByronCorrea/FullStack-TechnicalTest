@@ -52,6 +52,9 @@ export const seachBar = createSlice({
     setBrandsList: (state, { payload }) => {
       state.brands = payload;
     },
+    clearProduct: (state) => {
+      state.product = initialState.product;
+    },
   },
 });
 
@@ -60,6 +63,7 @@ export const {
   setBrandsList,
   setPopularProducts,
   setProduct,
+  clearProduct,
 } = seachBar.actions;
 
 export default seachBar.reducer;

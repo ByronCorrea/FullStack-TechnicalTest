@@ -1,16 +1,14 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Pagination, Autoplay } from "swiper";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
-import { setProduct } from "../../redux/searchBar";
 
 function Popular() {
   const { products } = useSelector((state) => state.searchBar);
-  const dispatch = useDispatch();
   return (
     <section className="popular section" id="popular">
       <div className="container">
@@ -50,10 +48,7 @@ function Popular() {
             <div className="swiper-wrapper">
               {products.map((product) => (
                 <SwiperSlide key={product.id}>
-                  <Link
-                    to={`/details/${product.id}`}
-                    onClick={() => dispatch(setProduct(product))}
-                  >
+                  <Link to={`/details/${product.id}`}>
                     <article className="popular__card swiper-slide">
                       <img
                         src={product.img_url}
@@ -67,9 +62,6 @@ function Popular() {
                           {product.price}
                         </h2>
                         <h3 className="popular__title">{product.name}</h3>
-                        {/* <p className="popular__description">
-                        {product.description}
-                      </p> */}
                       </div>
                     </article>
                   </Link>

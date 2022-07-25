@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
-import styles from "./Details.module.css";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchProductById } from "../../../redux/searchBar";
+import { fetchProductById, clearProduct } from "../../../redux/searchBar";
 import { useParams } from "react-router-dom";
 
 function Details() {
@@ -9,12 +8,21 @@ function Details() {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    dispatch(clearProduct());
     dispatch(fetchProductById(id));
   }, [dispatch, id]);
 
   const { product } = useSelector((state) => state.searchBar);
   return (
-    <section className="section">
+    <section
+      className="section"
+      style={{
+        display: "flex",
+        marginLeft: "auto",
+        marginRight: "auto",
+        width: "30%",
+      }}
+    >
       <div className="container">
         <span className="section__subtitle">{product.name}</span>
         <h2 className="section__title">
@@ -22,21 +30,32 @@ function Details() {
           <span>.</span>
         </h2>
 
-        <div className={styles.sliderr}>
-          <img src={product.img_url} alt="" />
+        <div>
+          <img
+            src={product.img_url}
+            alt={product.name}
+            style={{
+              display: "flex",
+              maxWidth: "350px",
+              height: "350px",
+              marginLeft: "auto",
+              marginRight: "auto",
+              width: "100%",
+            }}
+          />
         </div>
 
-        <div className={styles.genress}>
+        <div>
           <h4 style={{ color: "#ecb365" }}>Brand: </h4>
-          <div className={styles.genres22}>
+          <div>
             <span>{product.brand}</span>
           </div>
         </div>
 
-        <div className={styles.ratingg}>
-          <h4 style={{ color: "#ecb365" }}>Description</h4>
+        <div>
+          <h4 style={{ color: "#ecb365" }}>Description:</h4>
         </div>
-        <div className={styles.descriptionn}>
+        <div>
           <div>{product.description}</div>
         </div>
       </div>
