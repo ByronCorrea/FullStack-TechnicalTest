@@ -7,7 +7,7 @@ function Footer() {
       <div className="footer__container container grid">
         <div>
           <a href="#" className="footer__logo">
-            Holux <i className="bx bxs-home-alt-2"></i>
+            Tecno House <i class="bx bxs-home-smile"></i>
           </a>
           <p className="footer__description">
             Our vision is to make all people <br />
@@ -110,7 +110,7 @@ function Footer() {
 
       <div className="footer__info container">
         <span className="footer__copy">
-          &#169; Formaters. All rigths reserved
+          &#169; Tecno House. All rigths reserved
         </span>
 
         <div className="footer__privacy">

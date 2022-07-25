@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <nav className="nav container">
       <NavLink to="/home" className="nav__logo">
-        Holux <i className="bx bxs-home-alt-2"></i>
+        Tecno House <i class="bx bxs-home-smile"></i>
       </NavLink>
 
       <div className="nav__menu">
