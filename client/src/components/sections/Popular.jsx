@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 
 function Popular() {
   const { products } = useSelector((state) => state.searchBar);
+
   return (
     <section className="popular section" id="popular">
       <div className="container">
@@ -69,13 +70,6 @@ function Popular() {
               ))}
             </div>
           </div>
-          <a
-            className="view"
-            href="/products"
-            style={{ textDecoration: "none" }}
-          >
-            View all products
-          </a>
         </Swiper>
       </div>
     </section>
