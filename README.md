@@ -2,6 +2,8 @@
 
 Technical interwiew for a job like Full Stack Web Developer.
 
+![preview img](/preview.png)
+
 ## In the project directory (/client && /api), you can run:
 
 ```
