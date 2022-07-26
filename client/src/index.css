@@ -1275,3 +1275,17 @@ body.dark-theme {
     zoom: 2%;
   }
 }
+
+.view {
+  color: #ecb365;
+  font-size: 1.2rem;
+  justify-content: flex-end;
+  display: grid;
+  padding-top: 1.5rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .view {
+    display: none;
+  }
+}

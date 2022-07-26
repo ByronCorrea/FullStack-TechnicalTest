@@ -67,9 +67,15 @@ function Popular() {
                   </Link>
                 </SwiperSlide>
               ))}
-              <a href="/products">View all products</a>
             </div>
           </div>
+          <a
+            className="view"
+            href="/products"
+            style={{ textDecoration: "none" }}
+          >
+            View all products
+          </a>
         </Swiper>
       </div>
     </section>
