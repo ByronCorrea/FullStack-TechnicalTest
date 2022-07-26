@@ -201,7 +201,3 @@ Extras
    xxx@xxx.com (Spanish is OK for questions, no need to ask in
    English).
    Good luck!
-
-```
-
-```
