@@ -1,6 +1,101 @@
 # FullStack-TechnicalTest
 
-Technical interwiew for a job like Full Stack Web Developer
+Technical interwiew for a job like Full Stack Web Developer.
+
+## In the project directory (/client && /api), you can run:
+
+```
+npm start
+```
+
+```
+.env
+#back-end
+DB_USER=(usuariodepostgres)
+DB_PASSWORD=(passwordDePostgres)
+DB_HOST=(localhost)
+DB_NAME=(name)
+PORT=(3001)
+JWT=(?)
+
+#front-end
+REACT_APP_API=http://localhost:3001
+REACT_APP_AUTH0_DOMAIN=YOUR AUTH0 DOMAIN
+REACT_APP_AUTH0_CLIENT_ID=YOUR AUTH0 CLIENT ID
+REACT_APP_AUTH0_AUDIENCE=YOUR AUTH0 AUDIENCE
+
+```
+
+Replace postgresuser and postgrespassword with your own credentials to connect to postgres. This file will be ignored when uploading to github, as it contains sensitive information (credentials).
+
+Additionally, it will be necessary to create a database called ecomerce from psql
+
+```
+#### Necessary technologies:
+
+- [ ] React
+- [ ] Redux Toolkit
+- [ ] Express - Axios
+- [ ] Sequelize - Postgres
+- [ ] AUTH0
+
+
+#### Frontend
+
+- Home: "/"
+
+- Phone detail path: "/details/:id"
+
+- All products path: "/products"
+
+#### Database
+
+- [ ] Product:
+
+  - ID: \*
+  - Name \*
+  - Descripction \*
+  - Image url \*
+  - Brand \*
+  - Price \*
+
+- [ ] Brand:
+
+  - ID \*
+  - Name \*
+  - Logo url \*
+
+#### Backend
+
+- [ ] **GET /products**:
+
+- [ ] **GET /products/:id**:
+
+- [ ] **GET /brands**:
+
+- [ ] **GET /brands/:id**:
+
+- [ ] **GET /customers**:
+
+- [ ] **POST /produts**:
+
+- [ ] **POST /customers**:
+
+- [ ] **POST /brands**:
+
+- [ ] **PUT /produts/:id**:
+
+- [ ] **PUT /brands/:id**:
+
+- [ ] **PUT /customers/:id**:
+
+- [ ] **DELETE /produts/:id**:
+
+- [ ] **DELETE /brands/:id**:
+
+- [ ] **DELETE /customers/:id**:
+
+```
 
 Coding Challenge
 In this document you will find a test assignment we expect you to complete successfully.
@@ -106,3 +201,7 @@ Extras
    xxx@xxx.com (Spanish is OK for questions, no need to ask in
    English).
    Good luck!
+
+```
+
+```
