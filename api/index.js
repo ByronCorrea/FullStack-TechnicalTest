@@ -29,7 +29,7 @@ conn.sync({ force: false }).then(() => {
   });
 });
 
-// createData();
+createData();
 
 async function createData() {
   const bufferData = fs.readFileSync("./src/DB.json");
