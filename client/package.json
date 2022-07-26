@@ -46,7 +46,6 @@
     ]
   },
   "devDependencies": {
-    "@types/redux-persist": "^4.3.1",
-    "nth-check": ">=2.0.1"
+    "@types/redux-persist": "^4.3.1"
   }
 }
