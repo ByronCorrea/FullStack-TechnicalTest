@@ -8,7 +8,7 @@
 }
 
 .popular__container {
-  padding: 1rem 10rem 5rem;
+  padding: 2rem 10rem 5rem;
 }
 
 .elements {
@@ -68,5 +68,17 @@ select::-ms-expand {
 @media screen and (max-width: 1600px) {
   .elements {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .elements {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .elements {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

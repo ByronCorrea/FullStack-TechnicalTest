@@ -15,12 +15,11 @@ function Details() {
   const { product } = useSelector((state) => state.searchBar);
   return (
     <section
-      className="section"
+      className="section details"
       style={{
         display: "flex",
         marginLeft: "auto",
         marginRight: "auto",
-        width: "30%",
       }}
     >
       <div className="container">
@@ -41,6 +40,7 @@ function Details() {
               marginLeft: "auto",
               marginRight: "auto",
               width: "100%",
+              borderRadius: "20px",
             }}
           />
         </div>

@@ -264,7 +264,7 @@ body.dark-theme {
 
   .nav__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
 
@@ -406,6 +406,12 @@ body.dark-theme {
   box-shadow: 0 16px 32px hsla(228, 66%, 25% 0.25);
 }
 
+.details {
+  margin-bottom: 7rem;
+}
+
+@media screen and (max-width: 575px) {
+}
 /*=============== BUTTON ===============*/
 .button {
   display: inline-block;
@@ -881,11 +887,15 @@ body.dark-theme {
     grid-template-columns: repeat(1, 180px);
     justify-content: center;
   }
+  .details {
+    width: 94%;
+  }
 }
 
 @media screen and (max-width: 320px) {
   .nav__menu {
     padding: 1.3rem 1.5rem;
+    width: 50%;
   }
 
   .home__value {
@@ -930,12 +940,22 @@ body.dark-theme {
   .footer__content {
     gap: 2.5rem;
   }
+
+  .details {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .home__img {
+    margin-top: 2rem;
+  }
 }
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
   .nav__menu {
-    width: 342px;
+    width: 50%;
   }
 
   .home__search {
@@ -953,6 +973,10 @@ body.dark-theme {
 
   .footer__content {
     grid-template-columns: repeat(3, max-content);
+  }
+
+  .details {
+    width: 60%;
   }
 }
 
@@ -1000,6 +1024,10 @@ body.dark-theme {
   .footer__container {
     grid-template-columns: repeat(2, max-content);
     justify-content: space-between;
+  }
+
+  .details {
+    width: 50%;
   }
 }
 
@@ -1228,6 +1256,10 @@ body.dark-theme {
   }
   .home__img {
     top: -15rem;
+  }
+
+  .details {
+    width: 40%;
   }
 }
 

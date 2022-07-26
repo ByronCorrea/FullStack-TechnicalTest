@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <nav className="nav container">
       <NavLink to="/" className="nav__logo">
-        Tecno House <i className="bx bxs-home-smile"></i>
+        Techno House <i className="bx bxs-home-smile"></i>
       </NavLink>
 
       <div className="nav__menu">
@@ -23,7 +23,7 @@ function Navbar() {
               className="nav__link"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
-              <i className="bx bx-home-alt-2"></i>
+              <i className="bx bxs-home"></i>
               <span>Home</span>
             </NavLink>
           </li>
@@ -34,7 +34,7 @@ function Navbar() {
               className="nav__link"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
-              <i className="bx bx-building-house"></i>
+              <i className="bx bxs-store"></i>
               <span>Products</span>
             </NavLink>
           </li>
