@@ -2,6 +2,7 @@ import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import searchBarReducer from "./searchBar";
 import storage from "redux-persist/lib/storage";
 import storageSession from "redux-persist/lib/storage/session";
+import userReducer from "./user";
 import {
   persistStore,
   persistReducer,
@@ -28,6 +29,7 @@ const seachBarPersistConfig = {
 
 const rootReducer = combineReducers({
   searchBar: persistReducer(seachBarPersistConfig, searchBarReducer),
+  user: userReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

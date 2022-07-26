@@ -1,7 +1,17 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { useAuth0 } from "@auth0/auth0-react";
 
 function Navbar() {
+  const { img, isAdmin } = useSelector((state) => state.user);
+  const { isAuthenticated, loginWithRedirect, logout, isLoading } = useAuth0();
+  const navigate = useNavigate();
+
+  const GoToAdmin = () => {
+    navigate("/admin");
+  };
+
   let activeStyle = {
     color: "#5670D7",
   };
@@ -44,9 +54,30 @@ function Navbar() {
       {/* <!-- Theme change button  --> */}
       <i className="bx bx-moon change-theme" id="theme-button"></i>
 
-      <a href="#home" className="button nav__button">
-        LOG IN
-      </a>
+      {!isAuthenticated && !isLoading ? (
+        <a
+          href="#home"
+          className="button nav__button"
+          onClick={() => loginWithRedirect && loginWithRedirect()}
+        >
+          LOG IN
+        </a>
+      ) : (
+        <div>
+          <Link to="/profile">
+            <img src={img} alt="" className="nav__profile" />
+          </Link>
+          {isAdmin && (
+            <button className=" nav__buttonn" onClick={GoToAdmin}>
+              Admin
+            </button>
+          )}
+
+          <button className="nav__buttonn" onClick={logout}>
+            Logout
+          </button>
+        </div>
+      )}
     </nav>
   );
 }

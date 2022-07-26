@@ -247,6 +247,26 @@ body.dark-theme {
   color: var(--first-color);
 }
 
+.nav__buttonn {
+  margin-left: 1rem;
+
+  display: inline-block;
+  background: linear-gradient(101deg, hsla(228, 66%, 53%), hsl(228, 66%, 47%));
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  box-shadow: 0 4px 8px hsla(228, 66%, 45%, 0.25);
+  transition: 0.3s;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.nav__profile {
+  margin-bottom: -1rem;
+}
+
 @media screen and (max-width: 1023px) {
   .nav__menu {
     position: fixed;
@@ -1288,4 +1308,11 @@ body.dark-theme {
   .view {
     display: none;
   }
+}
+
+.nav__profile {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
 }
