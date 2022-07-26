@@ -110,7 +110,7 @@ function Footer() {
 
       <div className="footer__info container">
         <span className="footer__copy">
-          &#169; Tecno House. All rigths reserved
+          &#169; Techno House. All rigths reserved
         </span>
 
         <div className="footer__privacy">
