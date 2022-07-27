@@ -31,7 +31,7 @@ function Value() {
         item.classList.add("accordion-open");
       }
     };
-  });
+  }, []);
 
   return (
     <section className="value section" id="faq">
