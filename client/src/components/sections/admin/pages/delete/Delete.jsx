@@ -1,19 +1,23 @@
 import React, { useEffect } from "react";
-import { useSelector } from "react-redux";
-import ProductCard from "./card/ProductCard";
-// import "../products/Products.css";
 import { useDispatch } from "react-redux";
-import { clearProduct } from "../../../redux/searchBar";
-import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import "../../../../sections/products/Products.css";
+import ProductCard from "../../../products/card/ProductCardDelete";
+import {
+  clearProduct,
+  clearProducts,
+  fetchAllProduts,
+} from "../../../../../redux/searchBar";
 
-function Products() {
+function Delete() {
   const { products } = useSelector((state) => state.searchBar);
   const dispatch = useDispatch();
 
   useEffect(() => {
+    dispatch(clearProducts());
     dispatch(clearProduct());
+    dispatch(fetchAllProduts());
   }, [dispatch]);
-
   return (
     <section className="sectionn">
       {/* <div className="select">
@@ -26,17 +30,15 @@ function Products() {
           ))}
         </select>
       </div> */}
-      <span className="section__subtitle">Best Choise</span>
+      <span className="section__subtitle">Delete</span>
       <h2 className="section__title">
-        Our Phones<span>.</span>
+        Select a phone to delete<span>.</span>
       </h2>
 
       <div className="popular__container">
         <div className="elements">
           {products.map((product) => (
-            <Link to={`/details/${product.id}`}>
-              <ProductCard props={product} key={product.id} />
-            </Link>
+            <ProductCard props={product} key={product.id} />
           ))}
         </div>
       </div>
@@ -44,4 +46,4 @@ function Products() {
   );
 }
 
-export default Products;
+export default Delete;

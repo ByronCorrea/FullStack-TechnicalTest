@@ -40,19 +40,30 @@ router.get("/:id", async (req, res, next) => {
 router.post("/", async (req, res, next) => {
   const { name, description, img_url, price, brand } = req.body;
   try {
-    let product = await Product.findOrCreate({
+    let product = await Product.create({
       name: name,
-      description: description,
       img_url: img_url,
       price: price,
+      description: description,
     });
+
+    if (brand) {
+      try {
+        let marca = await Brand.findOrCreate({
+          where: { name: brand },
+        });
+        product.setBrand(marca[0]);
+      } catch (error) {
+        next(error);
+      }
+    }
+
     res.json({
       id: product.id,
       name: product.name,
-      description: product.description,
       img_url: product.img_url,
       price: product.price,
-      brand: product.brand,
+      description: product.description,
     });
   } catch (error) {
     next(error);
@@ -70,15 +81,23 @@ router.put("/:id", async (req, res, next) => {
         description: description,
         img_url: img_url,
         price: price,
-        brand: brand,
       });
+      if (brand) {
+        try {
+          let marca = await Brand.findOrCreate({
+            where: { name: brand },
+          });
+          product.setBrand(marca[0]);
+        } catch (error) {
+          next(error);
+        }
+      }
       res.json({
         id: product.id,
         name: product.name,
         description: product.description,
         img_url: product.img_url,
         price: product.price,
-        brand: product.brand,
       });
     } else {
       res.status(404).send("Product not found");

@@ -65,23 +65,21 @@ sequelize.models = Object.fromEntries(capsEntries);
 const { Product, Brand } = sequelize.models; //falta agregar brand
 // Para un id mas prolijo, podemos usar la siguientes lineas
 
-let idProduct = 1000;
-Product.addHook("beforeCreate", (product) => {
-  product.id = idProduct++;
-});
+// let idProduct = 1000;
+// Product.addHook("beforeCreate", (product) => {
+//   product.id = idProduct++;
+// });
 
-let idBrand = 1000;
-Brand.addHook("beforeCreate", (brand) => {
-  brand.id = idBrand++;
-});
+// let idBrand = 1000;
+// Brand.addHook("beforeCreate", (brand) => {
+//   brand.id = idBrand++;
+// });
 
 // Aca vendrian las relaciones
 Product.belongsTo(Brand, {
-  througt: "ProductBrand",
   timestamps: false,
 });
-Brand.belongsToMany(Product, {
-  through: "ProductBrand",
+Brand.hasMany(Product, {
   timestamps: false,
 });
 

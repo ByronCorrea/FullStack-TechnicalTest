@@ -36,6 +36,15 @@ export const fetchProductById = (id) => async (dispatch) => {
   }
 };
 
+export const deleteProduct = (id) => async (dispatch) => {
+  try {
+    await axios.delete(`/products/${id}`);
+    dispatch(fetchAllProduts());
+  } catch (err) {
+    console.log(err);
+  }
+};
+
 export const seachBar = createSlice({
   name: "searchBar",
   initialState,
@@ -55,6 +64,9 @@ export const seachBar = createSlice({
     clearProduct: (state) => {
       state.product = initialState.product;
     },
+    clearProducts: (state) => {
+      state.products = initialState.products;
+    },
   },
 });
 
@@ -64,6 +76,7 @@ export const {
   setPopularProducts,
   setProduct,
   clearProduct,
+  clearProducts,
 } = seachBar.actions;
 
 export default seachBar.reducer;

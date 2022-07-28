@@ -10,8 +10,7 @@ function Subscribe() {
           best phone soon.
         </p>
         <a href="#home" className="button subscribe__button">
-          {" "}
-          Get Started{" "}
+          Get Started
         </a>
       </div>
     </section>

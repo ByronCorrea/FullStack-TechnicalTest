@@ -4,7 +4,7 @@ const { JWT } = process.env;
 
 module.exports = (sequelize) => {
   sequelize.define(
-    "customer",
+    "Customer",
     {
       id: {
         type: DataTypes.UUID,

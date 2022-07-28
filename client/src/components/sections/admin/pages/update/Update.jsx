@@ -1,17 +1,23 @@
 import React, { useEffect } from "react";
-import { useSelector } from "react-redux";
-import ProductCard from "./card/ProductCard";
-// import "../products/Products.css";
 import { useDispatch } from "react-redux";
-import { clearProduct } from "../../../redux/searchBar";
+import { useSelector } from "react-redux";
+import "../../../../sections/products/Products.css";
+import ProductCard from "../../../products/card/ProductCard";
+import {
+  clearProduct,
+  clearProducts,
+  fetchAllProduts,
+} from "../../../../../redux/searchBar";
 import { Link } from "react-router-dom";
 
-function Products() {
+function Update() {
   const { products } = useSelector((state) => state.searchBar);
   const dispatch = useDispatch();
 
   useEffect(() => {
+    dispatch(clearProducts());
     dispatch(clearProduct());
+    dispatch(fetchAllProduts());
   }, [dispatch]);
 
   return (
@@ -26,15 +32,15 @@ function Products() {
           ))}
         </select>
       </div> */}
-      <span className="section__subtitle">Best Choise</span>
+      <span className="section__subtitle">Update</span>
       <h2 className="section__title">
-        Our Phones<span>.</span>
+        Select a phone to update<span>.</span>
       </h2>
 
       <div className="popular__container">
         <div className="elements">
           {products.map((product) => (
-            <Link to={`/details/${product.id}`}>
+            <Link to={`/admin/update/${product.id}`}>
               <ProductCard props={product} key={product.id} />
             </Link>
           ))}
@@ -44,4 +50,4 @@ function Products() {
   );
 }
 
-export default Products;
+export default Update;

@@ -41,13 +41,13 @@ select::-ms-expand {
 .select {
   position: relative;
   display: flex;
-  width: 20em;
+  width: 22em;
   height: 3em;
   border-radius: 0.25em;
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
-  right: 38rem;
+  /* right: 38rem; */
 }
 /* Arrow */
 .select::after {
@@ -81,4 +81,8 @@ select::-ms-expand {
   .elements {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+textarea {
+  resize: none;
 }
