@@ -60,7 +60,7 @@ function Popular() {
                       <div className="popular__data">
                         <h2 className="popular__price">
                           <span>$</span>
-                          {product.price}
+                          {product.price} <span>USD</span>
                         </h2>
                         <h3 className="popular__title">{product.name}</h3>
                       </div>

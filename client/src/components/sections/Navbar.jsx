@@ -68,7 +68,7 @@ function Navbar() {
             <img src={img} alt="" className="nav__profile" />
           </Link>
           {isAdmin && (
-            <button className=" nav__buttonn" onClick={GoToAdmin}>
+            <button className="nav__buttonn" onClick={GoToAdmin}>
               Admin
             </button>
           )}

@@ -74,7 +74,6 @@ function Value() {
             <div className="value__accordion-item">
               <header className="value__accordion-header">
                 <i className="bx bxs-x-square value__accordion-icon"></i>
-                {/* <!-- <i className='bx bxs-shield-x'></i> --> */}
                 <h3 className="value__accordion-title">Deliveries?</h3>
                 <div className="value__accordion-arrow">
                   <i className="bx bxs-down-arrow"></i>
@@ -92,7 +91,6 @@ function Value() {
             <div className="value__accordion-item">
               <header className="value__accordion-header">
                 <i className="bx bxs-bar-chart-square value__accordion-icon"></i>
-                {/* <!-- <i className='bx bxs-shield-x'></i> --> */}
                 <h3 className="value__accordion-title">
                   How long is the warranty time?
                 </h3>
@@ -112,7 +110,6 @@ function Value() {
             <div className="value__accordion-item">
               <header className="value__accordion-header">
                 <i className="bx bxs-check-square value__accordion-icon"></i>
-                {/* <!-- <i className='bx bxs-shield-x'></i> --> */}
                 <h3 className="value__accordion-title">Do you do wholesale?</h3>
                 <div className="value__accordion-arrow">
                   <i className="bx bxs-down-arrow"></i>

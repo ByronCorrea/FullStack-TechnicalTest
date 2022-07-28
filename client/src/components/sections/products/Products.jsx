@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import ProductCard from "./card/ProductCard";
-import "../products/Products.css";
+// import "../products/Products.css";
 import { useDispatch } from "react-redux";
 import { clearProduct } from "../../../redux/searchBar";
+import { Link } from "react-router-dom";
 
 function Products() {
   const { products } = useSelector((state) => state.searchBar);
@@ -33,9 +34,9 @@ function Products() {
       <div className="popular__container">
         <div className="elements">
           {products.map((product) => (
-            // <Link to={`/details/${product.id}`}>
-            <ProductCard props={product} key={product.id} />
-            // {/* </Link> */}
+            <Link to={`/details/${product.id}`}>
+              <ProductCard props={product} key={product.id} />
+            </Link>
           ))}
         </div>
       </div>
