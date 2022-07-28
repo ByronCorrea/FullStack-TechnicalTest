@@ -4,11 +4,9 @@ module.exports = (sequelize) => {
     "Product",
     {
       id: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
+        type: DataTypes.UUID,
+        defaultValue: DataTypes.UUIDV4,
         primaryKey: true,
-        autoIncrement: true,
-        unique: true,
       },
       name: {
         type: DataTypes.STRING,
@@ -22,10 +20,7 @@ module.exports = (sequelize) => {
       img_url: {
         type: DataTypes.STRING,
         allowNull: false,
-      },
-      brand: {
-        type: DataTypes.STRING,
-        allowNull: false,
+        unique: true,
       },
       price: {
         type: DataTypes.INTEGER,
