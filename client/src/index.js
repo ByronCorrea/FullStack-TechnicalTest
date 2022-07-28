@@ -10,8 +10,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Auth0ProviderWithHistory } from "./Auth0ProviderWithHistory";
 import axios from "axios";
 
-axios.defaults.baseURL =
-  process.env.REACT_APP_API_URL || "http://localhost:3001";
+axios.defaults.baseURL = process.env.REACT_APP_API || "http://localhost:3001";
 axios.defaults.headers.post["Content-Type"] = `application/json`;
 
 ReactDOM.createRoot(document.getElementById("root")).render(
