@@ -1404,3 +1404,29 @@ p.danger {
 .contact__form-area {
   height: 11rem;
 }
+
+.admingrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1rem;
+  padding: 2rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.adminbrand {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  border: #ecb365 solid 1px;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.adminproduct {
+  grid-column: 3 / span 4;
+  grid-row: 1 / span 2;
+  border: #ecb365 solid 1px;
+  border-radius: 2rem;
+  padding: 1rem;
+}

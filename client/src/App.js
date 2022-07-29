@@ -4,7 +4,6 @@ import Page from "./components/Page";
 import Products from "./components/sections/products/Products.jsx";
 import Header from "./components/sections/containers/Header";
 import Details from "./components/sections/details/Details.jsx";
-import Create from "./components/sections/admin/pages/Create";
 import "./index.css";
 import { fetchAllProduts } from "./redux/searchBar";
 import { Routes, Route } from "react-router-dom";
@@ -13,9 +12,14 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { ProtectedRoute } from "./protected-route";
 import Admin from "./components/sections/admin/Admin.jsx";
 import axios from "axios";
-import Update from "./components/sections/admin/pages/update/Update.jsx";
-import UpdateId from "./components/sections/admin/pages/update/UpdateId.jsx";
-import Delete from "./components/sections/admin/pages/delete/Delete";
+import CreateProduct from "./components/sections/admin/pages/create/CreateProduct";
+import UpdateProduct from "./components/sections/admin/pages/update/UpdateProduct.jsx";
+import UpdateIdProduct from "./components/sections/admin/pages/update/UpdateIdProduct.jsx";
+import DeleteProduct from "./components/sections/admin/pages/delete/DeleteProduct";
+import DeleteBrand from "./components/sections/admin/pages/delete/DeleteBrand";
+import UpdateIdBrand from "./components/sections/admin/pages/update/UpdateIdBrand";
+import CreateBrand from "./components/sections/admin/pages/create/CreateBrand";
+import UpdateBrand from "./components/sections/admin/pages/update/UpdateBrand";
 
 function App() {
   const dispatch = useDispatch();
@@ -53,21 +57,39 @@ function App() {
           path="/admin"
           element={<ProtectedRoute component={Admin} role="admin" />}
         />
+        {/* PRODUCTS */}
         <Route
-          path="/admin/create"
-          element={<ProtectedRoute component={Create} role="admin" />}
+          path="/admin/createproduct"
+          element={<ProtectedRoute component={CreateProduct} role="admin" />}
         />
         <Route
-          path="/admin/update"
-          element={<ProtectedRoute component={Update} role="admin" />}
+          path="/admin/updateproduct"
+          element={<ProtectedRoute component={UpdateProduct} role="admin" />}
         />
         <Route
-          path="/admin/update/:id"
-          element={<ProtectedRoute component={UpdateId} role="admin" />}
+          path="/admin/updateproduct/:id"
+          element={<ProtectedRoute component={UpdateIdProduct} role="admin" />}
         />
         <Route
-          path="/admin/delete"
-          element={<ProtectedRoute component={Delete} role="admin" />}
+          path="/admin/deleteproduct"
+          element={<ProtectedRoute component={DeleteProduct} role="admin" />}
+        />
+        {/* BRANDS */}
+        <Route
+          path="/admin/createbrand"
+          element={<ProtectedRoute component={CreateBrand} role="admin" />}
+        />
+        <Route
+          path="/admin/updatebrand"
+          element={<ProtectedRoute component={UpdateBrand} role="admin" />}
+        />
+        <Route
+          path="/admin/updatebrand/:id"
+          element={<ProtectedRoute component={UpdateIdBrand} role="admin" />}
+        />
+        <Route
+          path="/admin/deletebrand"
+          element={<ProtectedRoute component={DeleteBrand} role="admin" />}
         />
       </Routes>
     </div>
