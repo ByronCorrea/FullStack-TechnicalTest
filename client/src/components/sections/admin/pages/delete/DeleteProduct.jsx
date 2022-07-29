@@ -9,7 +9,7 @@ import {
   fetchAllProduts,
 } from "../../../../../redux/searchBar";
 
-function Delete() {
+function DeleteProduct() {
   const { products } = useSelector((state) => state.searchBar);
   const dispatch = useDispatch();
 
@@ -46,4 +46,4 @@ function Delete() {
   );
 }
 
-export default Delete;
+export default DeleteProduct;

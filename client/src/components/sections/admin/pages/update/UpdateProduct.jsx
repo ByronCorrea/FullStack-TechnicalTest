@@ -10,7 +10,7 @@ import {
 } from "../../../../../redux/searchBar";
 import { Link } from "react-router-dom";
 
-function Update() {
+function UpdateProduct() {
   const { products } = useSelector((state) => state.searchBar);
   const dispatch = useDispatch();
 
@@ -40,7 +40,7 @@ function Update() {
       <div className="popular__container">
         <div className="elements">
           {products.map((product) => (
-            <Link to={`/admin/update/${product.id}`}>
+            <Link to={`/admin/updateproduct/${product.id}`}>
               <ProductCard props={product} key={product.id} />
             </Link>
           ))}
@@ -50,4 +50,4 @@ function Update() {
   );
 }
 
-export default Update;
+export default UpdateProduct;
