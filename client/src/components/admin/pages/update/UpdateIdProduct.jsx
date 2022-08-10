@@ -1,9 +1,16 @@
 import React, { useEffect, useMemo } from "react";
 import toast, { Toaster } from "react-hot-toast";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { useNavigate, useParams } from "react-router-dom";
+import {
+  fetchProductById,
+  clearProduct,
+  fetchAllProduts,
+} from "../../../../redux/searchBar";
 import axios from "axios";
 
-function CreateProduct() {
+function UpdateIdProduct() {
+  const { id } = useParams();
   const [input, setInput] = React.useState({
     brand: "",
     name: "",
@@ -11,9 +18,10 @@ function CreateProduct() {
     price: "",
     description: "",
   });
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const { brands } = useSelector((state) => state.searchBar);
-  // console.log(brands);
 
   const urlRegEx = useMemo(() => new RegExp("https?://.*.(?:png|jpg)"), []);
   const validate = (input) => {
@@ -36,7 +44,6 @@ function CreateProduct() {
   const onSelect = (e) => {
     e.preventDefault();
     let prueba = e.target.value;
-    // console.log(prueba);
     setInput({ ...input, brand: prueba });
   };
 
@@ -73,7 +80,7 @@ function CreateProduct() {
       !error.price
     ) {
       toast.promise(
-        axios.post("/products", {
+        axios.put("/products/" + id, {
           brand: input.brand,
           name: input.name,
           img_url: input.img_url,
@@ -82,8 +89,8 @@ function CreateProduct() {
         }),
         {
           loading: "Loading...",
-          success: "Product created successfully!",
-          error: "Error creating product, try again!",
+          success: "Product updated successfully!",
+          error: "Error updating product, try again!",
         }
       );
     } else {
@@ -96,6 +103,12 @@ function CreateProduct() {
       });
       toast.error("¡Please fill all the fields!");
     }
+    dispatch(clearProduct());
+    dispatch(fetchAllProduts());
+    setTimeout(() => {
+      console.log("");
+      navigate("/admin/update");
+    }, 3000);
   }
 
   useEffect(() => {
@@ -117,9 +130,14 @@ function CreateProduct() {
     });
   }, []);
 
+  useEffect(() => {
+    dispatch(clearProduct());
+    dispatch(fetchProductById(id));
+  }, [dispatch, id]);
+
   return (
     <div className="section">
-      <form action="/" method="POST" className="contact__form" type="submit">
+      <form action="/" method="PUT" className="contact__form" type="submit">
         <div className="select contact__form-div">
           <select name="select" value={input.brand} onChange={onSelect}>
             <option value="" disabled>
@@ -214,4 +232,4 @@ function CreateProduct() {
   );
 }
 
-export default CreateProduct;
+export default UpdateIdProduct;

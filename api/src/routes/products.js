@@ -6,7 +6,7 @@ const {
   postProduct,
   putProduct,
   deleteProduct,
-} = require("./products");
+} = require("../controllers/products");
 
 router.get("/", getProducts);
 

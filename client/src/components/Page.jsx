@@ -1,6 +1,6 @@
 import React from "react";
-import Main from "./sections/containers/Main";
-import Footer from "./sections/containers/Footer";
+import Main from "./containers/Main";
+import Footer from "./containers/Footer";
 
 function Page() {
   return (

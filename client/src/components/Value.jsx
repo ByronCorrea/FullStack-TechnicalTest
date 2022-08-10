@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import value from "../assets/IPhone_13_Pro.webp";
+import value from "./assets/IPhone_13_Pro.webp";
 
 function Value() {
   useEffect(() => {

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchProductById, clearProduct } from "../../../redux/searchBar";
+import { fetchProductById, clearProduct } from "../../redux/searchBar";
 import { useParams } from "react-router-dom";
 
 function Details() {

@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
-import Home1 from "../../assets/IphoneHome.png";
+import Home1 from "../assets/IphoneHome.png";
 import SearchBar from "../SearchBar/SearchBar";
-import { clearProduct } from "../../../redux/searchBar";
+import { clearProduct } from "../../redux/searchBar";
 import { useDispatch } from "react-redux";
 
 function Home() {

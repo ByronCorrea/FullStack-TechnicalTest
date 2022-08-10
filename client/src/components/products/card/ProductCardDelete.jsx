@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./ProductCard.module.css";
 import { useDispatch } from "react-redux";
-import { deleteProduct } from "../../../../redux/searchBar";
+import { deleteProduct } from "../../../redux/searchBar";
 import toast, { Toaster } from "react-hot-toast";
 
 function ProductCardDelete({ props }) {

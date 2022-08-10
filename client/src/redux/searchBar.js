@@ -20,11 +20,20 @@ export const fetchAllProduts = () => async (dispatch) => {
     await axios
       .get("/products")
       .then((res) => dispatch(setProductsList(res.data)));
+  } catch (error) {
+    console.log(error);
+  } finally {
     axios.get("/brands").then((res) => dispatch(setBrandsList(res.data)));
-  } catch (err) {
-    console.log(err);
   }
 };
+
+// export const fetchAllBrands = () => async (dispatch) => {
+//   try {
+//     await axios.get("/brands").then((res) => dispatch(setBrandsList(res.data)));
+//   } catch (err) {
+//     console.log(err);
+//   }
+// };
 
 export const fetchProductById = (id) => async (dispatch) => {
   try {
@@ -40,6 +49,14 @@ export const deleteProduct = (id) => async (dispatch) => {
   try {
     await axios.delete(`/products/${id}`);
     dispatch(fetchAllProduts());
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+export const deleteBrand = (id) => async (dispatch) => {
+  try {
+    await axios.delete(`/brands/${id}`);
   } catch (err) {
     console.log(err);
   }
