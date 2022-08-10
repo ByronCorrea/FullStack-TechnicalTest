@@ -5,6 +5,7 @@ const {
   getBrandById,
   postBrand,
   putBrand,
+  deleteBrand,
 } = require("../controllers/brands");
 
 router.get("/", getBrands);

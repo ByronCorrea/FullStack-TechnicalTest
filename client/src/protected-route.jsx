@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { withAuthenticationRequired } from "@auth0/auth0-react";
-import { Loader } from "./components/sections/Loader/Loader";
+import { Loader } from "./components/Loader/Loader";
 
 export const ProtectedRoute = ({ component, role }) => {
   const Component = withAuthenticationRequired(component, {

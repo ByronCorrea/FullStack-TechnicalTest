@@ -1,8 +1,8 @@
-const { Products, Brand } = require("../db");
+const { Product, Brand } = require("../db");
 
 const getProducts = async (_req, res, next) => {
   try {
-    let products = await Products.findAll();
+    let products = await Product.findAll();
     if (!products) {
       res.status(404).send("No products found");
     } else {
@@ -16,7 +16,7 @@ const getProducts = async (_req, res, next) => {
 const getProductById = async (req, res, next) => {
   const { id } = req.params;
   try {
-    let product = await Products.findByPk(id);
+    let product = await Product.findByPk(id);
     if (!product) {
       res.status(404).send("Product not found");
     } else {
@@ -30,7 +30,7 @@ const getProductById = async (req, res, next) => {
 const postProduct = async (req, res, next) => {
   const { name, description, img_url, price, brand } = req.body;
   try {
-    let product = await Products.create({
+    let product = await Product.create({
       name,
       description,
       img_url,
@@ -56,7 +56,7 @@ const putProduct = async (req, res, next) => {
   const { id } = req.params;
   const { name, description, img_url, price, brand } = req.body;
   try {
-    let product = await Products.findByPk(id);
+    let product = await Product.findByPk(id);
     if (product) {
       product.update({
         name: name,
@@ -86,7 +86,7 @@ const putProduct = async (req, res, next) => {
 const deleteProduct = async (req, res, next) => {
   const { id } = req.params;
   try {
-    let product = await Products.findByPk(id);
+    let product = await Product.findByPk(id);
     if (product) {
       product.destroy();
       res.status(200).send("Product deleted");

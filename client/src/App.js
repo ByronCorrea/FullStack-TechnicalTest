@@ -1,25 +1,25 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import Page from "./components/Page";
-import Products from "./components/sections/products/Products.jsx";
-import Header from "./components/sections/containers/Header";
-import Details from "./components/sections/details/Details.jsx";
+import Products from "./components/products/Products.jsx";
+import Header from "./components/containers/Header";
+import Details from "./components/details/Details.jsx";
 import "./index.css";
 import { fetchAllProduts } from "./redux/searchBar";
 import { Routes, Route } from "react-router-dom";
 import { clearUser, setUser } from "./redux/user.js";
 import { useAuth0 } from "@auth0/auth0-react";
 import { ProtectedRoute } from "./protected-route";
-import Admin from "./components/sections/admin/Admin.jsx";
+import Admin from "./components/admin/Admin.jsx";
 import axios from "axios";
-import CreateProduct from "./components/sections/admin/pages/create/CreateProduct";
-import UpdateProduct from "./components/sections/admin/pages/update/UpdateProduct.jsx";
-import UpdateIdProduct from "./components/sections/admin/pages/update/UpdateIdProduct.jsx";
-import DeleteProduct from "./components/sections/admin/pages/delete/DeleteProduct";
-import DeleteBrand from "./components/sections/admin/pages/delete/DeleteBrand";
-import UpdateIdBrand from "./components/sections/admin/pages/update/UpdateIdBrand";
-import CreateBrand from "./components/sections/admin/pages/create/CreateBrand";
-import UpdateBrand from "./components/sections/admin/pages/update/UpdateBrand";
+import CreateProduct from "./components/admin/pages/create/CreateProduct";
+import UpdateProduct from "./components/admin/pages/update/UpdateProduct.jsx";
+import UpdateIdProduct from "./components/admin/pages/update/UpdateIdProduct.jsx";
+import DeleteProduct from "./components/admin/pages/delete/DeleteProduct";
+import DeleteBrand from "./components/admin/pages/delete/DeleteBrand";
+import UpdateIdBrand from "./components/admin/pages/update/UpdateIdBrand";
+import CreateBrand from "./components/admin/pages/create/CreateBrand";
+import UpdateBrand from "./components/admin/pages/update/UpdateBrand";
 
 function App() {
   const dispatch = useDispatch();
