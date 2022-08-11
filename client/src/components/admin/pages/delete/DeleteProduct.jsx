@@ -19,7 +19,7 @@ function DeleteProduct() {
     dispatch(fetchAllProduts());
   }, [dispatch]);
   return (
-    <section className="sectionn">
+    <section className="section">
       {/* <div className="select">
         <select name="select">
           <option value="">All</option>
