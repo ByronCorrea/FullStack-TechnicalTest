@@ -8,7 +8,7 @@ const initialState = {
     price: "",
     description: "",
     img_url: "",
-    brand: "",
+    BrandId: "",
   },
   products: [],
   brands: [],
@@ -27,13 +27,14 @@ export const fetchAllProduts = () => async (dispatch) => {
   }
 };
 
-// export const fetchAllBrands = () => async (dispatch) => {
-//   try {
-//     await axios.get("/brands").then((res) => dispatch(setBrandsList(res.data)));
-//   } catch (err) {
-//     console.log(err);
-//   }
-// };
+export const deleteProduct = (id) => async (dispatch) => {
+  try {
+    await axios.delete(`/products/${id}`);
+    dispatch(fetchAllProduts());
+  } catch (err) {
+    console.log(err);
+  }
+};
 
 export const fetchProductById = (id) => async (dispatch) => {
   try {
@@ -45,10 +46,9 @@ export const fetchProductById = (id) => async (dispatch) => {
   }
 };
 
-export const deleteProduct = (id) => async (dispatch) => {
+export const fetchBrandById = (id) => async (dispatch) => {
   try {
-    await axios.delete(`/products/${id}`);
-    dispatch(fetchAllProduts());
+    await axios.get(`/brands/${id}`);
   } catch (err) {
     console.log(err);
   }
