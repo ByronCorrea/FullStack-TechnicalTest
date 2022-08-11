@@ -5,63 +5,63 @@
       "description": "Light up your life with a professional camera that gives you bright, sharp photos and videos, whether it's at night or anytime inspiration strikes.",
       "img_url": "https://images.samsung.com/ar/smartphones/galaxy-s22/buy/S22_ColorSelection_PhantomWhite_MO.jpg?imwidth=480",
       "price": "299",
-      "brand": "Samsung"
+      "BrandId": "Samsung"
     },
     {
       "name": "Motorola Edge",
       "description": "Dreaming of the perfect 5G phone? With motorola edge, stream and download your favorite content on blazing-fast 5G, and watch on an immersive Endless Edge display with the most powerful stereo speakers ever2.",
       "img_url": "https://motorolaus.vtexassets.com/arquivos/ids/159097/racer-5g-pdp-render-4duppxfwb.png?v=637310165642070000",
       "price": "299",
-      "brand": "Motorola"
+      "BrandId": "Motorola"
     },
     {
       "name": "Moto G Stylus",
       "description": "Find new ways to express yourself with a versatile camera system, built-in stylus, and blazing-fast performance.",
       "img_url": "https://motorolaus.vtexassets.com/arquivos/ids/162006/moto-g-stylus-5G-pdp-render-Thermographyolfycz1o.png?v=637860703036700000",
       "price": "349",
-      "brand": ""
+      "BrandId": ""
     },
     {
       "name": "Motorola Razr",
       "description": "To build the best modern foldable phone, we re-thought the mechanical and industrial design. Completely transforming your smartphone experience.",
       "img_url": "https://motorolaus.vtexassets.com/arquivos/ids/159255/2020_Odyssey_Basic-Pack-Render_Mercury-Silver_Camera-Detail-Closed.png",
       "price": "799",
-      "brand": "Motorola"
+      "BrandId": "Motorola"
     },
     {
       "name": "Motorola One",
       "description": "5G speed is the future, and motorola one 5G ace is bringing it to everyone.  Enjoy superfast 5G speed that lets you download movies in seconds1, plus a battery that lasts for over 2 days2. ",
       "img_url": "https://motorolaus.vtexassets.com/arquivos/ids/159933/motorola-one-5g-ace-ecom-card-pdp-render-1-XXDaskj3s.png",
       "price": "249",
-      "brand": "Motorola"
+      "BrandId": "Motorola"
     },
     {
       "name": "Xiaomi Civi 1s",
       "description": "The Xiaomi Civi 1S phone is a novelty that will delight fans of miniature smartphones. The gadget is small and lightweight, so it easy to fit even in small pockets.",
       "img_url": "https://xiaomi-mi.us/uploads/CatalogueImage/pvm_08_18978_1656786230.jpg",
       "price": "499",
-      "brand": "Xiaomi"
+      "BrandId": "Xiaomi"
     },
     {
       "name": "Redmi Note 11T Pro+",
       "description": "Smartphone Mi Note 11T Pro + can surprise you with broad functionality. Among them is fast charging. It is what significantly differentiates this device from its close relative Mi Note 11T Pro.",
       "img_url": "https://xiaomi-mi.us/uploads/CatalogueImage/pvm_04_18968_1656838283.jpg",
       "price": "303",
-      "brand": "Xiaomi"
+      "BrandId": "Xiaomi"
     },
     {
       "name": "Redmi 10A ",
       "description": "Redmi 10A is a new smartphone that will delight you with its liberal price. However, despite the low cost, the gadget has extensive functionality.",
       "img_url": "https://xiaomi-mi.us/uploads/CatalogueImage/pvm_02_18944_1654541088.jpg",
       "price": "106",
-      "brand": "Xiaomi"
+      "BrandId": "Xiaomi"
     },
     {
       "name": "Black Shark 5 Pro",
       "description": "Black Shark 5 Pro is a smartphone that is designed to perform resource-intensive tasks. For this reason, the device has sunk into the hearts of all kinds of gamers so much!",
       "img_url": "https://xiaomi-mi.us/uploads/CatalogueImage/pvm_02_18935_1654626616.jpg",
       "price": "754",
-      "brand": "Xiaomi"
+      "BrandId": "Xiaomi"
     }
   ],
 
