@@ -1,7 +1,7 @@
 import React from "react";
 
 function UpdateBrand() {
-  return <div></div>;
+  return <div>No funciona</div>;
 }
 
 export default UpdateBrand;

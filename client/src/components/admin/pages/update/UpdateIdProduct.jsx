@@ -107,7 +107,7 @@ function UpdateIdProduct() {
     dispatch(fetchAllProduts());
     setTimeout(() => {
       console.log("");
-      navigate("/admin/update");
+      navigate("/admin/updateproduct");
     }, 3000);
   }
 
