@@ -48,7 +48,7 @@ function Details() {
         <div>
           <h4 style={{ color: "#ecb365" }}>Brand: </h4>
           <div>
-            <span>{product.brand}</span>
+            <span>{product.BrandId}</span>
           </div>
         </div>
 
