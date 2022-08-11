@@ -8,7 +8,7 @@ function Details() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    // dispatch(clearProduct());
+    dispatch(clearProduct());
     dispatch(fetchProductById(id));
   }, [dispatch, id]);
 

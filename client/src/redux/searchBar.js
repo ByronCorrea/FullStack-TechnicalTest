@@ -46,13 +46,13 @@ export const fetchProductById = (id) => async (dispatch) => {
   }
 };
 
-export const fetchBrandById = (id) => async (dispatch) => {
-  try {
-    await axios.get(`/brands/${id}`);
-  } catch (err) {
-    console.log(err);
-  }
-};
+// export const fetchBrandById = (id) => async (dispatch) => {
+//   try {
+//     await axios.get(`/brands/${id}`);
+//   } catch (err) {
+//     console.log(err);
+//   }
+// };
 
 export const deleteBrand = (id) => async (dispatch) => {
   try {
