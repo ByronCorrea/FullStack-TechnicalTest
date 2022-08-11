@@ -72,8 +72,8 @@ export const seachBar = createSlice({
     setPopularProducts: (state, action) => {
       state.popularProducts = action.payload;
     },
-    setProduct: (state, { payload }) => {
-      state.product = payload;
+    setProduct: (state, action) => {
+      state.product = action.payload;
     },
     setBrandsList: (state, { payload }) => {
       state.brands = payload;
