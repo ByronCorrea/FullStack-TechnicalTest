@@ -31,32 +31,30 @@ conn.sync({ force: true }).then(() => {
 
 // createData();
 
-// async function createData() {
-//   const bufferData = fs.readFileSync("./src/DB.json");
-//   const stData = bufferData.toString();
-//   const data = JSON.parse(stData);
+async function createData() {
+  const bufferData = fs.readFileSync("./src/DB.json");
+  const stData = bufferData.toString();
+  const data = JSON.parse(stData);
 
-// const products = data.products.map((l) => ({
-//   id: l.id,
-//   name: l.name,
-//   description: l.description,
-//   img_url: l.img_url,
-//   price: l.price,
-//   brand: l.brand,
-// }));
+  const products = data.products.map((l) => ({
+    name: l.name,
+    description: l.description,
+    img_url: l.img_url,
+    price: l.price,
+    BrandId: l.brand,
+  }));
 
-// const brands = data.brands.map((l) => ({
-//   // id: l.id,
-//   name: l.name,
-//   logo_url: l.logo_url,
-// }));
+  const brands = data.brands.map((l) => ({
+    name: l.name,
+    logo_url: l.logo_url,
+  }));
 
-// await Promise.all([
-//   // Product.bulkCreate(products, {
-//   //   ignoreDuplicates: true,
-//   // }),
-//   Brand.bulkCreate(brands, {
-//     ignoreDuplicates: true,
-//   }),
-// ]);
-// }
+  await Promise.all([
+    Product.bulkCreate(products, {
+      ignoreDuplicates: true,
+    }),
+    Brand.bulkCreate(brands, {
+      ignoreDuplicates: true,
+    }),
+  ]);
+}
